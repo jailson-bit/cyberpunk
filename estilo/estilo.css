@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nabla&family=Orbitron:wght@400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tilt+Neon&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: 'neon';
+    src: url(../fontes/Neonrec-Regular.otf) format('opentype');
+}
+
+:root {
+    --cor1: #91BBF2;
+    --cor2: #7E82D9;
+    --cor3: #44428C;
+    --cor4: #2C3D73;
+    --cor5: #090A26; 
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(216, 216, 216);
+    font-family: 'Exo', sans-serif;
+}
+
+#especial {
+    background-image: none;
+    color: var(--cor5);
+}
+
+img, video {
+    border-radius: 5px;
+}
+
+header {
+    background-color: var(--cor5);
+    color: var(--cor2);
+    text-align: center;
+    padding: 20px;
+    font-family: 'neon';
+    font-size: 1.3em;
+    text-shadow: 2px 2px rgb(241, 41, 236);
+}
+
+nav {
+    background-color: var(--cor5);
+}
+
+nav div {
+    color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+nav a {
+    background-color: var(--cor4);
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    transition-duration: .1s;
+    box-shadow: 0px 0px 5px .5px white;
+}
+
+nav a:active {
+    box-shadow: inset 0px 0px 5px .5px white;
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.315);
+}
+
+main h2 {
+    font-family: 'Orbitron';
+}
+
+section > h2, p {
+    margin: 15px 0px;
+}
+section > h2 {
+    background-image: linear-gradient(to right, var(--cor3), #44428c94);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: var(--cor2);
+    border-radius: 10px;
+    margin: 10px 0px;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.315);
+}
+
+aside h2 {
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside h3, ul {
+    padding: 10px;
+    list-style-position: inside;
+}
+
+div.youtube {
+    position: relative;
+    padding-bottom: 50%;
+    border-radius: 5px;
+}
+
+div.youtube > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    letter-spacing: 3px;
+}
